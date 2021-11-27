@@ -27,5 +27,6 @@ export class ProdutoService {
     .get<IProduto>(`http://localhost:8080/produto/${id}`)
     .toPromise();
   }
+  
 
 }
