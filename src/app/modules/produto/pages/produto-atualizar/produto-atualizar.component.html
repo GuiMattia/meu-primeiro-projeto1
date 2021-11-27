@@ -1,0 +1,68 @@
+<div class="col-md-12">
+    <div class="col-6">
+        <label for="nomeCompleto" class="form-label">Nome:</label>
+        <input placeholder="Digite o Nome Completo" type="text" class="form-control" id="nomeCompleto" [(ngModel)]="produto.nome">
+    </div>
+    </div>
+    
+    <div class="col-md-12">
+    <div class="col-12">
+        <label for="descricao" class="form-label">Descricao:</label>
+        <input placeholder="Digite o endereço completo" type="text" class="form-control" id="descricao" [(ngModel)]="produto.descricao">
+    </div>
+    </div>
+    
+    <div class="col-md-12 col-sm-6">
+        <label for="complemento" class="form-label">Complemento</label>
+        <input placeholder="Digite o complemento" type="text" class="form-control" id="complemento" [(ngModel)]="produto.complemento">
+    </div>
+    
+    <div class="col-md-6 col-sm-12">
+        <label for="quantidade" class="form-label">Quantidade:</label>
+        <input placeholder="Digite a quantidade" type="number" required id="quantidade" class="form-control" [(ngModel)]="produto.qtde"> 
+    </div>
+    
+    <div class="col-md-6 col-sm-6">
+        <label for="valor" class="form-label">Valor:</label>
+        <input placeholder="Digite o valor (R$)" type="number" required id="valor" class="form-control" [(ngModel)]="produto.valor">
+        </div>
+    
+    <div class="col-md-6 col-sm-12">
+        <label for="fabricante" class="form-label">Fabricante:</label>
+        <input placeholder="Digite o fabricante" type="text" id="fabricante" class="form-control" maxlength="13" [(ngModel)]="produto.fabricante">
+    </div>
+    
+    <div class="col-md-6 col-sm-12">
+        <label for="unidadeMedida" class="form-label">Unidade Medida:</label>
+        <select class="form-control" [(ngModel)]="produto.unidadeMedida">
+        <input type="text" id="unidadeMedida" class="form-control" maxlength="13">
+        <option class="form-control" value="UN">Unidade</option>
+        <option class="form-control" value="M2">Metro Quadrado</option>
+        <option class="form-control" value="M3">Metro Cúbico</option>
+        </select>
+    </div>
+    
+    <div class="col-md-12 col-sm-12">
+        <label for="fornecedor" class="form-label">Fornecedor:</label>
+        <input placeholder="Digite o fornecedor" type="text" id="fornecedor" class="form-control" maxlength="13" [(ngModel)]="produto.fornecedor">
+    </div>
+    
+    <div class="col-md-12 col-sm-12">
+        <label for="categoria" class="form-label">Categoria:</label>
+        <select class="form-control" [(ngModel)]="produto.categoria">
+        <option *ngFor="let categoria of categorias" value="{{categoria.id}}">{{categoria.descricao}}</option>
+        </select>
+    </div>
+    
+    <div class="col-md-6 col-sm-12">
+    <button class="btn btn-success"> Salvar </button>
+    </div> 
+    
+    
+    
+    
+    
+    
+    
+    
+    

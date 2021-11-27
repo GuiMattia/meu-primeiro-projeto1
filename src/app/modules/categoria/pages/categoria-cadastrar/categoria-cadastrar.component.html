@@ -1,0 +1,10 @@
+<app-categoria-form (salvarCategoriaEventPublisher)="salvar($event)"
+                    (limpaErroEventPublisher)="limpaErro($event)">
+
+</app-categoria-form>
+
+<div class="col-md-12" *ngIf="error.message.length > 0">
+    <span style="color: red;">{{error.message}}</span>
+</div> 
+
+

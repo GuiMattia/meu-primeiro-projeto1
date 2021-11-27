@@ -1,0 +1,27 @@
+
+<div class="col-md-12" *ngFor="let produto of produto.conteudo">
+    <div class="col-md-1">
+        <td>{{produto.id}}</td>
+    </div>
+    
+    <div class="col-md-1">
+        <td>{{produto.nome}}</td>
+    </div>
+
+    <div class="col-md-1"> 
+        <td>{{produto.qtde}}</td>
+    </div>
+
+    <div class="col-md-2">
+        <td>{{produto.valor}}</td>
+    </div>
+
+     <div class="3">
+        <button (click)="visualizar(produto)">Visualizar</button>
+        <button (click)="atualizar(produto)">Atualizar</button>
+     </div>
+</div>
+
+<div class="col-md-12">
+    <button id="btCadastrar" class="btn btn-success">Cadastrar Produto</button>
+</div>
